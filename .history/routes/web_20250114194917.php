@@ -25,4 +25,4 @@ Route::post('/admin/barang/simpan', [AdminController::class, 'simpan_barang']); 
 Route::post('/admin/barang/update/{id}', [AdminController::class, 'update_barang']); //ini untuk mengupdate data
 
 Route::get('/kasir', function () {
-    return view('layouts.master');});
+    return view('layouts.master');

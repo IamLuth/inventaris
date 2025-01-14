@@ -9,7 +9,7 @@ class AdminController extends Controller
 {
     public function admin()
     {
-        return view('admin.kasir.beranda');
+        return view('admin.beranda');
     }
 
     public function barang()
@@ -50,5 +50,4 @@ class AdminController extends Controller
         notify()->info('Berhasil Diupdate');
         return redirect('/admin/barang');
     }
-
 }

@@ -50,5 +50,4 @@ class AdminController extends Controller
         notify()->info('Berhasil Diupdate');
         return redirect('/admin/barang');
     }
-
 }

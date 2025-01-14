@@ -10,7 +10,7 @@
     <meta name="author" content="">
 
     <title>Inventaris</title>
-    @notifyCss
+    notifyCss
     <!-- Custom fonts for this template-->
     <link href="/sbadmin/vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
     <link
@@ -220,8 +220,6 @@
     <!-- Page level custom scripts -->
     <script src="/sbadmin/js/demo/chart-area-demo.js"></script>
     <script src="/sbadmin/js/demo/chart-pie-demo.js"></script>
-    <x-notify::notify />
-        @notifyJs
 
 </body>
 

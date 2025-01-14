@@ -15,7 +15,15 @@ class LoginController extends Controller
      */
     public function login(Request $req)
     {
-
+        // Validasi input
+        $req->validate([
+            'username' => 'required|string',
+            'password' => 'required|string|min:6',
+        ], [
+            'username.required' => 'Username wajib diisi.',
+            'password.required' => 'Password wajib diisi.',
+            'password.min' => 'Password harus terdiri dari minimal 6 karakter.',
+        ]);
 
         // Ambil data input untuk login
         $credentials = $req->only('username', 'password');
